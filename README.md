@@ -10,4 +10,4 @@ Plain text, image storage white whoring Zhihu's image bed
 
 For personal use only, not recommended as a reference for others
 
-仅为个人使用，不建议作为他人参考
+因正确性与易读性不能保证，故仅为个人使用，不建议作为他人参考
