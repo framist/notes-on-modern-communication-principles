@@ -89,10 +89,6 @@ framist 2022年3月15日
     - [作业](#作业)
     - [三角变换](#三角变换)
     - [示例](#示例)
-  - [6.3 模拟脉冲调制](#63-模拟脉冲调制)
-    - [PAM、PDM、PPM、](#pampdmppm)
-    - [实际抽样𝟙 —— 自然抽样的 PAM](#实际抽样𝟙--自然抽样的-pam)
-    - [实际抽样𝟚 —— 平顶抽样的 PAM](#实际抽样𝟚--平顶抽样的-pam)
 - [【现代通信原理】4 数字基带传输](#现代通信原理4-数字基带传输)
   - [数字基带传输系统模型](#数字基带传输系统模型)
   - [数字基带传输信号](#数字基带传输信号)
@@ -179,10 +175,10 @@ framist 2022年3月15日
       - [抽样](#抽样)
       - [重建](#重建)
     - [6.2.2   带通模拟信号的抽样定理](#622---带通模拟信号的抽样定理)
-  - [6.3 模拟脉冲调制](#63-模拟脉冲调制-1)
-    - [PAM、PDM、PPM、](#pampdmppm-1)
-    - [实际抽样𝟙 —— 自然抽样的 PAM](#实际抽样𝟙--自然抽样的-pam-1)
-    - [实际抽样𝟚 —— 平顶抽样的 PAM](#实际抽样𝟚--平顶抽样的-pam-1)
+  - [6.3 模拟脉冲调制](#63-模拟脉冲调制)
+    - [PAM、PDM、PPM、](#pampdmppm)
+    - [实际抽样𝟙 —— 自然抽样的 PAM](#实际抽样𝟙--自然抽样的-pam)
+    - [实际抽样𝟚 —— 平顶抽样的 PAM](#实际抽样𝟚--平顶抽样的-pam)
   - [6.4 模拟信号的量化](#64-模拟信号的量化)
     - [6.4.1  量化原理](#641--量化原理)
     - [6.4.2  均匀量化](#642--均匀量化)
@@ -1455,40 +1451,6 @@ $$
 
 ![Image](https://pic4.zhimg.com/80/v2-60a186791f3f90143d77eb3b33e8af67.png)
 
-## 6.3 模拟脉冲调制
-
-### PAM、PDM、PPM、
-
-![Image](https://pic4.zhimg.com/80/v2-7b835d916773e8223c63b2768e22ac3a.png)
-
-### 实际抽样𝟙 —— 自然抽样的 PAM
-
-**特点**：样值脉冲 $s(t)$ 的脉冲随原信号幅值 $m(t)$ 而改变
-
-**抽样**与**恢复**原理框图：
-
-![Image](https://pic4.zhimg.com/80/v2-3b779e4000c6b9fdf0203ff0e40e6f28.png)
-
-![Image](https://pic4.zhimg.com/80/v2-0d3ebbe06c63e2ab0494c926e9862f80.png)
-
-**恢复**：均可用理想低通滤波器取出原信号。
-
-<br />
-
-### 实际抽样𝟚 —— 平顶抽样的 PAM
-
-**特点**：每个样值脉冲的顶部是平坦的。
-
-**产生**：抽样 + 保持
-
-![Image](https://pic4.zhimg.com/80/v2-ae95a7cd523ba49ef30c4110c691897d.png)
-
-![Image](https://pic4.zhimg.com/80/v2-3abed6be9415880d477a54741c5083d2.png)
-
-**恢复**：修正+低通滤波
-
-![Image](https://pic4.zhimg.com/80/v2-15dc3282ab5afaf63d2ab9f878226c23.png)
-
 <br />  
 <br />  
 <br />
@@ -2276,7 +2238,7 @@ FSK 可视为两个不同载频的 2ASK 的叠加
 #### 表达式
 
 $$
-e_{\mathrm{2FSK}}(t)=\left[\sum_{n}{a_ng(t-nT_s)}\right]\cos{(\omega_1t+\phi_n)+\left[\sum_{n}{{\overline{a}}_ng(t-nT_s)}\right]\cos{(}\omega_2t+\theta_n)}
+e_{\mathrm{2FSK}}(t)=\left[\sum_{n}{a_ng(t-nT_s)}\right]\cos{(\omega_1t+\phi_n)+\left[\sum_{n}{{\overline{a}}_ng(t-nT_s)}\right]\cos{(\omega_2t+\theta_n)}}
 $$
 
 化简：
